@@ -6,7 +6,7 @@ int main()
     FILE* fichier=NULL;
     int decompte(unsigned long x);
     void suivant(int d[4]);
-    unsigned long x,nbiter=5;
+    unsigned long x,nbiter;
     unsigned int r;
     int d[4]={1,1,1,1};
     char reste;
