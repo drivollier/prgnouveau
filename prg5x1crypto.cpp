@@ -11,12 +11,13 @@ int main(int argc, char *argv[])
     sscanf(argv[3],"%u",&N);
     uint64_t x[N];
     uint64_t d[N];
-    sscanf(argv[4],"%lu",&x[0]);
 
     for (int k=0;k<N;k++)
     {
-        sscanf(argv[5+k],"%lu",&d[k]);
+	sscanf(argv[4+k],"%lu",&x[k]);        
+	sscanf(argv[4+N+k],"%lu",&d[k]);
     }
+    x[0]+=7;
     FILE* fichier=NULL;
     fichier = fopen(argv[1], "w");
     fputs("#==================================================================\n",fichier);
