@@ -1,6 +1,6 @@
 
 const int N=2;
-static uint64_t x[N]={9};
+static uint64_t x[N]={7};
 static uint32_t s=0;
 
 
@@ -13,7 +13,7 @@ uint32_t gen32(void)
             s=(s<<1)|out;
 	    if (out==1)
             {
-                x[0]=5*x[0];
+                x[0]=5*x[0]+1;
                 for(k=1;k<N;k++)
                 {
                 x[k]=5*x[k]+(x[k-1]>>61);
